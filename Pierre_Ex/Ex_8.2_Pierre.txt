@@ -6,7 +6,7 @@ Début compteurDigital
 	Fin Variables locales
 
 	nb1 <- 0
-	Tant que nb1 <= 10			
+	Tant que nb1 <= 9			
 		nb2 <- 0
 		Tant que nb2 <= 9					
 			nb3 <- 0
