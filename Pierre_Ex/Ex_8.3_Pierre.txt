@@ -1,0 +1,24 @@
+Début nombresParfaits
+	Variables locales :
+		var nb :N <- 0
+		var i :N <- 0
+		var result :N <- 0
+	Fin Variables locales
+
+	i <- 0
+	nb <- 1
+	Tant que nb < 100		
+		i <- nb
+		Tant que i =/ 1
+			Si nb MOD i = 0 
+				Alors
+					result <- result + nb / i
+					i <- nb - 1
+					Afficher "Ce nombre est parfait"
+				Sinon
+					i <- nb - 1
+			Finsi		
+		Fintantque			
+		nb <- nb +1
+	Fintantque	
+Fin nombresParfaits
