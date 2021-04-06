@@ -2,27 +2,17 @@ Début tablesDeMultiplication
 	Début Variables locales :
 		var nb1	:N <- 1
 		var nb2 :N <- 1
-		var result1 :N <- 0
-		var result2 :N <- 0		
+		var result :N <- 0			
 	Fin Variables locales
-		
-	Tant que nb2 <= 10 
-		Alors
-			result1 <- nb1 * nb2 
-			Afficher nb1, "x" ,nb2, "=" ,result1
-			nb2 <- nb2 + 1
-		Sinon
-			nb1 <- 2
-			nb2 <- 1
-			Tant que nb1 <= 10
-				Alors 
-					result2 <- nb1 * nb2
-					Afficher nb1, "x" ,nb2, "=" , result2
-					nb2 <- nb2 + 1
-				Sinon	
-					nb1 <- nb1 + 1
-					nb2 <- 1
+			
+	nb1 <- 1
+	Tant que nb1 <= 10
+		nb2 <- 1
+			Tant que nb2 <= 10
+				result <- nb1 * nb2 
+				Afficher nb1, "x" ,nb2, "=" ,result
+				nb2 <- nb2 + 1
 			Fintantque
-	Fintantque	
-	
+		nb1 <- nb1 + 1
+	Fintantque		
 Fin tablesDeMultiplication
