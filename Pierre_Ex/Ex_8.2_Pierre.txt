@@ -1,0 +1,21 @@
+Début compteurDigital
+	Début Variables locales :
+		var nb1 :N <- 0
+		var nb2 :N <- 0
+		var nb3 :N <- 0	
+	Fin Variables locales
+
+	nb1 <- 0
+	Tant que nb1 <= 10			
+		nb2 <- 0
+		Tant que nb2 <= 9					
+			nb3 <- 0
+			Tant que nb3 <= 9 		
+				Afficher nb1,nb2,nb3
+				nb3 <- nb3 + 1
+			Fintantque
+			nb2 <- nb2 + 1	
+		Fintantque	
+		nb1 <- nb1 + 1
+	Fintantque
+Fin compteurDigital
