@@ -23,23 +23,3 @@ Début diagonalesTableauCarré
 	Fintantque		
 Fin diagonalesTableauCarré
 		
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fin diagonalesTableauCarré
