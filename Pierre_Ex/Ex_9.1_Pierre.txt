@@ -1,0 +1,45 @@
+Début diagonalesTableauCarré
+	Début Variables locales :			
+		const TAILLE :N <- 4
+		var tab :N [TAILLE,TAILLE]
+		var i :N <- 1
+		var j :N <- 1				
+	Fin Variables locales
+
+	i <- 1
+	j <- 1
+	Tant que i <= TAILLE ET j <= TAILLE				
+		tab [i,j] <- 1
+		i <- i + 1
+		j <- j + 1
+	Fintantque
+	
+	i <- TAILLE - 1
+	j <- 1
+	Tant que i <= TAILLE ET i =/ 0					
+		tab [i,j] <- 2	
+		i <- i - 1
+		j <- j + 1
+	Fintantque		
+Fin diagonalesTableauCarré
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fin diagonalesTableauCarré
