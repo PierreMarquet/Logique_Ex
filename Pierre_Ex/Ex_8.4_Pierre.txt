@@ -1,0 +1,31 @@
+Début nombresPremiers
+	Variabes locales :
+		var a :N <- 0
+		var b :N <- 0
+		var ind :N <- 0
+		var premier :B <- vrai		
+	Fin Variables locales
+
+	Afficher " 2 est un nombre premier"
+	ind <- 1	
+	a <- 3
+	Tant que ind < 100
+		premier <- vrai
+		b <- 3
+		racine <- racine(a)
+		Tant que b <= racine ET premier
+			Si a mod b = 0
+				Alors
+					premier <- faux
+			Finsi
+			b <- b + 2
+		Fintantque
+	
+		Si premier	
+			Alors
+				Afficher a, " est un nombre premier"
+				ind <- ind + 1
+		Finsi
+		a <- a + 2
+	Fintantque
+Fin nombresPremiers
