@@ -1,0 +1,34 @@
+Début copieTableau
+	Variables locales :
+		var TAILLE1 :N <- 0
+		var TAILLE2 :N <- 0
+		var TAILLE3 :N <- 0
+		var tab1 :N [TAILLE1,TAILLE2]
+		var tab2 :N [TAILLE3]
+		var i :N <- 0
+	Fin Variables locales
+
+	Afficher "Entrez le nombre de lignes du tableau à 2 dimensions :"
+	Saisir TAILLE1
+	Afficher "Entrez le nombre de colonnes du tableau à 2 dimensions :"
+	Saisir TAILLE2	
+	TAILLES3 <- TAILLE1 * TAILLE2
+	
+	Tant que TAILLE2 >= 1
+	
+		tab2 [TAILLE3] <- tab1 [TAILLE1,TAILLE2]
+		TAILLE2 <- TAILLE2 - 1
+		TAILLE3 <- TAILLE3 - 1
+		i <- i + 1
+	Fintantque
+
+	TAILLE1 <- 1
+	TAILLE2 <- 1
+	TAILLE3 <- 1
+
+	Tant que TAILLE2 <= i
+		tab2 [TAILLE3] <- tab1 [TAILLE1,TAILLE2]
+		TAILLE2 <- TAILLE2 + 1
+		TAILLE3 <- TAILLE3 + 1
+	Fintantque
+Fin copieTableau
