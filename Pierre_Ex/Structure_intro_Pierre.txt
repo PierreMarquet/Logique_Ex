@@ -1,0 +1,101 @@
+Structure Personne
+	var nom : T
+	var prenom : T
+	var naissance : Date
+Finstructure
+
+Structure Date
+	var jour : N
+	var mois : N
+	var an : N
+Finstructure
+
+Début structure10Stagiaires
+	Variables locales :
+		const TAILLE :N <- 10
+		var tab :Personne [TAILLE]
+		var i :N <- 1
+		var stagiaire : Personne
+	Fin Variables locales
+
+	Pour i allant de 1 à TAILLE
+		stagiaire <- CREER Personne
+		stagiaire.naissance <- CREER Date
+		tab[i] <- stagiaire
+		Afficher "Entrez votre nom"
+		Saisir stagiaire.nom
+		Afficher "Entrez votre prénom"
+		Saisir stagiaire.prenom
+		Afficher "Entrez votre jour de naissance"
+		Saisir stagiaire.naissance.jour
+		Afficher "Entrez votre mois de naissance"
+		Saisir stagiaire.naissance.mois
+		Afficher "Entrez votre année de naissance"
+		Saisir stagiaire.naissance.an				
+	i suivant				
+Fin structure10Stagiaires
+	
+
+
+
+//Test raté
+
+Structure Stagiaire
+	var nom : T
+	var prenom : T
+	var naissance : Date
+Finstructure
+		
+Structure Date
+	var jour : N
+	var mois : N
+	var an : N
+Finstructure
+
+Début structure10Stagiaires
+	Variables locales :
+		const TAILLE : N <- 10
+		var tab :N <- [TAILLE]
+		var i : N <- 1		
+		var personne : Stagiaire
+		var naissance : Date				
+	Fin Variables locales
+
+	Pour i allant de 1 à TAILLE
+		stagiaire <- CREER Personne
+		Saisir stagiaire.nom
+		Stagiaire[i].nom <- nom
+		Saisir stagiaire.prenom
+		Stagiaire[i].prenom <- prenom
+		
+		
+		Saisir stagiaire.personne.date.jour
+		Stagiaire[i].naissance.jour <- jour
+		Saisir stagiaire.personne.date.mois 
+		Stagiaire[i].naissance.mois <- mois
+		Saisir stagiaire.personne.date.an
+		Stagiaire[i].naissance.an <- an
+		
+	i suivant
+Fin structure10Stagiaires
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
